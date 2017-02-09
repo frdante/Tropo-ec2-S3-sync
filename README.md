@@ -1,5 +1,5 @@
 # Tropo-ec2-S3-sync
-Saving DLR JSON results as a TXT document on your S3 bucket using ec2 instances as server.
+Saving DLR JSON results as a TXT document on your S3 bucket using AWS ec2 instance as server.
 
 This Python script will upload the Tropo DLR results from an AWS ec2 instance to your S3 bucket using *itty* webserver on PORT 8888.
 
@@ -8,7 +8,6 @@ You just need to install [Boto3](https://boto3.readthedocs.io/en/latest/) from t
 You may have to configure the *default region* on "config" file by typing the follwoing from terminal:
 
 ```
-
 $ cd .aws
 $ vim config
 ```
