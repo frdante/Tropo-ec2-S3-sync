@@ -11,9 +11,11 @@ You may have to configure the *default region* on "config" file by typing the fo
 
 $ cd .aws
 $ vim config
+```
 
-Add to the file:
+Then, add to the file:
 
+```
 [default]
 region = your_default_region
 ```
