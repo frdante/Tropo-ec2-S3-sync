@@ -1,7 +1,7 @@
 # Tropo-ec2-S3-sync
-Saving DLR results as a JSON document on your S3 bucket usinng ec2 instances as DLR URL.
+Saving DLR JSON results as a TXT document on your S3 bucket using ec2 instances as server.
 
-This Python script will upload the Tropo DLR results from an AWS ec2 instance to your S3 bucket.
+This Python script will upload the Tropo DLR results from an AWS ec2 instance to your S3 bucket using *itty* webserver on PORT 8888.
 
 You just need to install [Boto3](https://boto3.readthedocs.io/en/latest/) from terminal typing **pip install boto3** and add your S3 Key, Secret Key in the script.
 
@@ -20,3 +20,4 @@ region = your_default_region
 
 Then, run the script.
 
+Note that you may have to add PORT 8888 as inbound **Custom TCP Rule** in the ec2 Security Group, otherwise, you have just to change the port in the script to those you use as TCP connection.
