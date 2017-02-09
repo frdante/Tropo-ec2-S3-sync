@@ -21,4 +21,4 @@ region = your_default_region
 
 Then, run the script.
 
-Note that you may have to add PORT 8888 as inbound **Custom TCP Rule** in the ec2 Security Group, otherwise, you have just to change the port in the script to those you use as TCP connection.
+Note that you may have to add PORT 8888 as inbound **Custom TCP Rule** in the ec2 Security Group, otherwise, you have just to change the port in the script to that you use as TCP connection.
