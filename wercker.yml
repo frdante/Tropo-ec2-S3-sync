@@ -1,0 +1,18 @@
+box: node
+services:
+  
+build:
+  steps:
+    - npm-install:
+        strict-ssl: false
+    
+    # A comment
+    -  npm-test
+    -  script:
+        name: some simple test!
+        code: |-
+          ech"line 1"
+          echo "line 2"
+  after-steps:
+      - mzp/http-notify:
+          url: https://bots.kore.ai/hooks/f09bb94d916014b5246d21d9eb03200a
